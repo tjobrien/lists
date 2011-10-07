@@ -1,0 +1,14 @@
+<p>
+  	<%= f.label :name, "List Name" %></br>
+	<%= f.text_field :name %>
+</p>
+
+<%= f.fields_for :list_items do |builder| %>  
+  <p class='item'>  
+    <%= builder.label :item %><br />  
+    <%= builder.text_field :item, :size => 40 %>  
+  </p>  
+  <% end %>
+
+<a href='/' id='add'>Add Item</a>
+

@@ -1,0 +1,16 @@
+<% title "List" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @list.name %>
+</p>
+<ol>
+	<% @list.list_items.each do |li| %>
+	<li><%= li.item %></li>
+	<% end %>
+</ol>
+
+<p>
+  <%= link_to "Edit", edit_list_path(@list) %> |
+  <%= link_to "View All", lists_path %>
+</p>

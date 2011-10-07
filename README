@@ -1,0 +1,14 @@
+An example of how to add a textbox using JQuery with nested forms.
+
+Clone the project and look at the list.rb and the views - lists - new and views - lists - edit.
+
+All JQuery is in application.js
+
+This is a super simple example and I left the JQuery code simple so you could see how this works with out all the chaining of methods.
+
+I removed the "destroy" link which is a part of nifty:scaffold.  There is an issue with JQuery and Prototype.  If you look at the application.html.erb
+in the layouts folder you will see that I only load the javascripts needed for this example.  Unobtrusive JS.
+
+
+
+
